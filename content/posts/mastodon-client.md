@@ -144,7 +144,7 @@ struct InstanceRequest: ApiRequest
 All models conform to Swift's `Codable` protocol. This means that they can be decoded from or encoded to JSON rather easily. 
 
 For example, if you look at the code for [`MastodonInstance`](https://github.com/nathanwale/MastodonAndOn/blob/main/Mastodon/Models/MastodonInstance.swift), you'll see that only properties and their types have to be defined. The decoder and encoder can be configured. Here's the configuration for the decoder:
-<a href='#date-decoder'></a>
+<a id='date-decoder'></a>
 ```swift
 static var decoder: JSONDecoder {
 	let decoder = JSONDecoder()
