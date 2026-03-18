@@ -7,7 +7,7 @@ layout: "layouts/main.html"
             {{ title }}
         </h1>
         <div class="date">
-            {{ date | date: "%d %b %Y" }}
+            {{ date | date(format="%d %b %Y") }}
         </div>
         <p class="summary">
             {{ summary }}
