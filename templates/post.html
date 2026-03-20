@@ -1,27 +1,33 @@
+{% extends "main.html" %}
+{% block title %}{{page.title}}{% endblock title %}
+{% block content %}
+
 <main class="article">
     <article>
         <h1>
-            {{ page }}
             {{ page.title }}
         </h1>
         <div class="date">
             {{ page.date | date(format="%d %b %Y") }}
         </div>
         <p class="summary">
-            {{ page.summary }}
+            {{ page.extra.summary | safe }}
         </p>
         <ul class='article-tags'>
+        {% set tags = page.taxonomies.tags | sort %}
         {%- for tag in tags -%}
             {%- if tag != "post" -%}
             <li>
-                <a class="tag" href="/tags/{{tag}}">{{tag}}</a>
+                <a class="tag" href="/tags/{{tag | slugify}}">{{tag}}</a>
             </li>
             {%- endif -%}
         {%- endfor -%}
         </ul>
         <div class="content">
-            {{ content }}
+            {{ page.content | safe }}
         </div>
-        {% include "layouts/site-tags.html" %}
+        {% include "site-tags.html" %}
     </article>
 </main>
+
+{% endblock content %}
