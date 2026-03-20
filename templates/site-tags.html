@@ -2,10 +2,12 @@
     <h2>Site Tags</h2>
     <ul>
         {% set tags = get_taxonomy(kind="tags") %}
-        {% for tag in tags.items %}
+        {% for tag in tags.items | sort(attribute="name") %}
             {% if tag != "post" %}
             <li>
-                <a class="tag" href="/tags/{{tag}}">{{tag}}</a>
+                <a class="tag" href="/tags/{{tag.name | slugify}}">
+                    {{tag.name}} 
+                </a>
             </li>
             {% endif %}
         {% endfor %}
