@@ -1,16 +1,14 @@
----
-layout: "layouts/main.html"
----
 <main class="article">
     <article>
         <h1>
-            {{ title }}
+            {{ page }}
+            {{ page.title }}
         </h1>
         <div class="date">
-            {{ date | date(format="%d %b %Y") }}
+            {{ page.date | date(format="%d %b %Y") }}
         </div>
         <p class="summary">
-            {{ summary }}
+            {{ page.summary }}
         </p>
         <ul class='article-tags'>
         {%- for tag in tags -%}
