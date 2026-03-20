@@ -1,8 +1,9 @@
 <nav>
     <ul>
         {% for section in site_sections %}
+        {% set title = site_titles[loop.index0] %}
         <li>
-            <a href="/{{ section[1] | downcase | url_encode }}/">{{ section[0] }}</a>
+            <a href="/{{ section }}/">{{ title }}</a>
         </li>
         {% endfor %}
     </ul>
