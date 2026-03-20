@@ -9,7 +9,7 @@
             Date: {{ post.date }}
         </em>
         <p class="summary">
-            {{ post.summary }}
+            {{ post.extra.summary | safe }}
         </p>
     </div>
     {% endfor %}
