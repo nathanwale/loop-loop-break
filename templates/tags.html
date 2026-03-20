@@ -1,0 +1,7 @@
+<main class='entrypoint'>
+    <h1>Articles tagged “{{ tag }}”</h1>
+    {% assign posts = collections[ tag ] | reverse %}
+    {% render "post-list.html", posts: posts %}
+    {% include "layouts/site-tags.html" %}
+</main>
+
