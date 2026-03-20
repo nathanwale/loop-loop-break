@@ -1,11 +1,14 @@
----
-title: Eleventy
-date: 2021-12-15
-tags: 
-    - eleventy
-    - site-generation
-summary: My experience using the static site generator <a href="https://www.11ty.dev/">Eleventy</a> to make this blog.
----
++++
+title = "Eleventy"
+date = 2021-12-15
+[taxonomies]
+tags = [
+    "eleventy",
+    "site-generation",
+]
+[extra]
+summary = "My experience using the static site generator <a href='https://www.11ty.dev/'>Eleventy</a> to make this blog."
++++
 
 
 When first building this site, I looked at a bunch of options before deciding on [Eleventy](https://www.11ty.dev/).

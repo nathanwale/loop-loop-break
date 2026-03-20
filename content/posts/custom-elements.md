@@ -1,11 +1,14 @@
----
-title: Custom Elements
-date: 2022-03-11
-tags: 
-    - javascript
-    - web components
-summary: Creating custom elements for web pages
----
++++
+title = "Custom Elements"
+date = 2022-03-11
+[taxonomies]
+tags = [
+    "javascript",
+    "web components",
+]
+[extra]
+summary = "Creating custom elements for web pages"
++++
 
 [Custom elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements) are a way to create your own elements for your HTML. Elements that do whatever you want. Elements that are... custom. 
 

@@ -1,11 +1,14 @@
----
-title: HTML Templates
-date: 2022-03-09
-tags: 
-    - javascript
-    - web components
-summary: HTML's &lt;template&gt; and &lt;slot&gt;
----
++++
+title = "HTML Templates"
+date = 2022-03-09
+[taxonomies]
+tags = [
+    "javascript",
+    "web components",
+]
+[extra]
+summary = "HTML's &lt;template&gt; and &lt;slot&gt;"
++++
 
 ## `<template>`
 ```html

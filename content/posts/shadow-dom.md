@@ -1,11 +1,14 @@
----
-title: The Shadow DOM
-date: 2022-03-07
-tags: 
-    - javascript
-    - web components
-summary: Why and what-for of the Shadow DOM
----
++++
+title = "The Shadow DOM"
+date = 2022-03-07
+[taxonomies]
+tags = [
+    "javascript",
+    "web components",
+]
+[extra]
+summary = "Why and what-for of the Shadow DOM"
++++
 ~~The Shadow DOM is a dark apparition of the regular DOM, symbolising all its darkest desires and the potential for evil even in the noblest hero...~~
 
 The Shadow DOM is a DOM separate from the main DOM of a web page. The Shadow DOM encapsulates its HTML and CSS, so that they don't leak into the rest of the document. Events will still bubble up from the Shadow DOM to the main DOM.

@@ -1,14 +1,17 @@
----
-title: Mastodon Client
-date: 2024-06-01
-tags: 
-    - ActivityPub
-    - Mastodon
-    - Swift
-    - SwiftUI
-    - iOS
-summary: A write-up of my bare-bones Mastodon client written in SwiftUI
----
++++
+title = "Mastodon Client"
+date = 2024-06-01
+[taxonomies]
+tags = [
+    "ActivityPub",
+    "Mastodon",
+    "Swift",
+    "SwiftUI",
+    "iOS",
+]
+[extra]
+summary = "A write-up of my bare-bones Mastodon client written in SwiftUI"
++++
 ![Screenshot of my Mastodon client](/images/thumbnails/mastodon-client.png)<br />
 **GitHub**: [https://github.com/nathanwale/MastodonAndOn](https://github.com/nathanwale/MastodonAndOn)<br />
 **Video tour**: [https://www.youtube.com/watch?v=nwX7kLQ9nus](https://www.youtube.com/watch?v=nwX7kLQ9nus)

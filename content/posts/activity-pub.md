@@ -1,12 +1,15 @@
----
-title: ActivityPub
-date: 2023-07-12
-tags: 
-    - ActivityPub
-    - web standards
-    - social networks
-summary: About ActivityPub, the open protocol for social networks
----
++++
+title = "ActivityPub"
+date = 2023-07-12
+[taxonomies]
+tags = [
+    "ActivityPub",
+    "web standards",
+    "social networks",
+]
+[extra]
+summary = "About ActivityPub, the open protocol for social networks"
++++
 
 [ActivityPub](https://www.w3.org/TR/activitypub/) is a protocol for social networking. 
 

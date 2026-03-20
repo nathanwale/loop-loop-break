@@ -1,11 +1,14 @@
----
-title: Eleventy, part&nbsp;2
-date: 2022-01-04
-tags: 
-    - eleventy
-    - site-generation
-summary: More thoughts on using the static site generator <a href="https://www.11ty.dev/">Eleventy</a> to make this blog.
----
++++
+title = "Eleventy, part 2"
+date = 2022-01-04
+[taxonomies]
+tags = [
+    "eleventy",
+    "site-generation",
+]
+[extra]
+summary = "More thoughts on using the static site generator <a href='https://www.11ty.dev/'>Eleventy</a> to make this blog."
++++
 
 [Previously](/posts/eleventy/), on Loop Loop break...
 
@@ -40,7 +43,7 @@ Tags are implemented by ~~abusing~~ taking advantage of Eleventy's [pagination s
 ### An example of paging
 From [the docs](https://www.11ty.dev/docs/pagination/#aliasing-to-a-different-variable):
 {%raw%}```yaml
----
++++
 pagination:  
     data: testdata  
     size: 1  
@@ -49,7 +52,7 @@ testdata:
     - Item1  
     - Item2
 permalink: "different/{{ wonder | slug }}/index.html"
----
++++
 ```{%endraw%}
 
 `testdata` above is a list of things we're going to paginate through. This is specified in `pagination.data`. `size` is how many items in each "chunk" — which is the items per page, I think.
@@ -69,14 +72,14 @@ If you assign `pagination.data` as `collections`, then you'll be "paging" throug
 
 Here's an example that's used on this site:
 {%raw%}```liquid
----
++++
 layout: "layouts/main.html"
 pagination:
     data: collections
     size: 1
     alias: tag
 permalink: /tags/{{ tag }}/
----
++++
 <h1>Posts tagged “{{ tag }}”</h1>
 {% render "post-list.html", posts: collections[ tag ] %}
 ```{%endraw%}

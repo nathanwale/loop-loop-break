@@ -1,11 +1,14 @@
----
-title: Recipe App
-date: 2023-06-01
-tags: 
-    - Swift
-    - iOS
-summary: A write-up of a recipe app I created for iOS in Swift and UIKit
----
++++
+title = "Recipe App"
+date = 2023-06-01
+[taxonomies]
+tags = [
+    "Swift",
+    "iOS",
+]
+[extra]
+summary = "A write-up of a recipe app I created for iOS in Swift and UIKit"
++++
 
 ![Screenshot of my recipe app](/images/thumbnails/recipe-app.png)<br />
 

@@ -1,10 +1,13 @@
----
-title: Javascript Proxies
-date: 2022-03-06
-tags: 
-    - javascript
-summary: Using Javascript's Proxy objects
----
++++
+title = "Javascript Proxies"
+date = 2022-03-06
+[taxonomies]
+tags = [
+    "javascript",
+]
+[extra]
+summary = "Using Javascript's Proxy objects"
++++
 
 ## Standard
 EcmaScript 6
