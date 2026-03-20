@@ -12,7 +12,7 @@
     </h1>
     {% set section = get_section(path="posts/_index.md") %}
     {% set posts = section.pages | reverse %}
-    {% include "post-list.html" %}
+    {{ macros::post_list(posts = posts) }}
     {% include "site-tags.html" %}
 </main>
 
