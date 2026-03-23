@@ -9,7 +9,7 @@ build_search_index = false
 
 # configure tags
 taxonomies = [
-  {name = "tags", render = false}
+  {name = "tags"}
 ]
 
 [markdown]
