@@ -12,7 +12,7 @@ I've been a web designer, developer, and an IT teacher. But my real dream is to 
 
 
 ## Contact
-{% render "contacts.html" %}
+{{ contact() }}
 
 
 ## Fonts
