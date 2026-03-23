@@ -1,6 +1,6 @@
 {% macro post_list(posts) %}
   <div class="posts">
-      {% for post in posts %}
+      {% for post in posts | sort(attribute="date") | reverse %}
       <div class="post">
           <h2>
               <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
