@@ -1,7 +1,12 @@
+{% extends "main.html" %}
+{% block title %}Articles tagged “{{ term.name }}”{% endblock title %}
+{% block content %}
+
 <main class='entrypoint'>
-    <h1>Articles tagged “{{ tag }}”</h1>
-    {% set posts = get_taxonomy(kind="tags") | reverse %}
-    {{ post_list(posts=posts) }}
-    {% include "layouts/site-tags.html" %}
+    <h1>Articles tagged “{{ term.name }}”</h1>
+    {% set posts = term.pages | reverse %}
+    {{ macros::post_list(posts=posts) }}
+    {% include "site-tags.html" %}
 </main>
 
+{% endblock %}
