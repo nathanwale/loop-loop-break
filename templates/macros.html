@@ -6,8 +6,7 @@
               <a href="{{ post.permalink | safe }}">{{ post.title }}</a>
           </h2>
           <em class="date">
-              {# {{ post.date | date(format="%d %b %Y") }} #}
-              Date: {{ post.date }}
+              {{ post.date | date(format="%d %b %Y") }}
           </em>
           <p class="summary">
               {{ post.extra.summary | safe }}
