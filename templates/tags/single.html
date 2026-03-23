@@ -1,1 +1,7 @@
-{{ term.name }}
+<main class='entrypoint'>
+    <h1>Articles tagged “{{ tag }}”</h1>
+    {% set posts = get_taxonomy(kind="tags") | reverse %}
+    {{ post_list(posts=posts) }}
+    {% include "layouts/site-tags.html" %}
+</main>
+
