@@ -1,0 +1,6 @@
+<h1>All the tags! ({{ terms | length }})</h1>
+{% for tag in terms %}
+  <a href='{{ get_taxonomy_url(kind="tags", name=tag.name) }}'>
+    {{ tag.name }}
+  </a> <br />
+{% endfor %}
