@@ -1,6 +1,26 @@
-<h1>All the tags! ({{ terms | length }})</h1>
-{% for tag in terms %}
-  <a href='{{ get_taxonomy_url(kind="tags", name=tag.name) }}'>
-    {{ tag.name }}
-  </a> <br />
-{% endfor %}
+{% extends "main.html" %}
+{% block title %}Article tags{% endblock title %}
+{% block content %}
+
+<main class='entrypoint'>
+  <h1>All the tags!</h1>
+  <article>
+  <div class="content">
+  <table>
+  {% set tags = get_taxonomy(kind="tags") %}
+  {% for tag in tags.items | sort(attribute="name") %}
+    <tr>
+      <td>
+        <a href="/tags/{{ tag.name | slugify }}">{{ tag.name }}</a>
+      </td>
+      <td>
+        {{ tag.page_count }} articles
+      </td>
+    </tr>
+  {% endfor %}
+  </table>
+  </div>
+  </article>
+</main>
+
+{% endblock %}
