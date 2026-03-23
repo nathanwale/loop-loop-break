@@ -8,7 +8,7 @@ It is I, Nathan, one of those web peeps. On this here blog type contraption I wr
 
 You can check out<sup>1</sup> some of my code at [github.com/nathanwale](https://github.com/nathanwale).
 
-I've been a web designer, developer, and an IT teacher. But my real dream is to pilot a giant robot to first place in the tri-state regional break dancing competition. I don't care if they say it's against the rules — the Supreme Court will decide<sup>2</sup>.
+I've been a web designer, developer, and an IT teacher. But my real dream is to pilot a giant robot to first place in the tri-state regional break dancing competition. I don't care if they say it's against the rules — the Supreme Court will decide.
 
 
 ## Contact
@@ -22,7 +22,10 @@ I've been a web designer, developer, and an IT teacher. But my real dream is to 
 
 
 ## Dietary Advice
-This site is made with [Eleventy](https://www.11ty.dev/). 
+~~This site is made with [Eleventy](https://www.11ty.dev/).~~
+
+This site is made with [Zola](https://www.getzola.org/).
+
 You can [view the source](https://github.com/nathanwale/looploopbreak-eleventy) on GitHub.
 
 The secret ingredients are love and maltodextrin. 
@@ -31,4 +34,3 @@ Any insights gained from this blog are illusory and fleeting.
 
 ---
 <small>**1.** Git joke.</small><br />
-<small>**2.** Disney, call me about movie rights to this story, it's basically the spiritual successor to Air Bud.</small>
