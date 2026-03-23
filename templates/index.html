@@ -7,11 +7,12 @@
         Portfolio
     </h1>
     {% include "demos.html" %}
+
     <h1>
         Articles
     </h1>
     {% set section = get_section(path="posts/_index.md") %}
-    {% set posts = section.pages | reverse %}
+    {% set posts = section.pages %}
     {{ macros::post_list(posts = posts) }}
     {% include "site-tags.html" %}
 </main>
