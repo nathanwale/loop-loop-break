@@ -132,7 +132,7 @@ It can then be used like so:
 This produces the same result as `<auto-link>` above. This version of `AutoLink` is a bit shorter to implement, because we don't have to construct an element, we use the one we're extending. However, it might not be as obvious in code that it's a non-standard version of `<a>`. I think I'd prefer `<auto-link>`. It's more explicit and quicker to use.
 
 ## Lifecycles of Custom Elements
-There are [a few methods](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Using_custom_elements#using_the_lifecycle_callbacks) that are fired at different times during the lifecycle of an element:
+There are [a few methods](https://developer.mozilla.org/en-US/docs/Web/API/Web_components/Using_custom_elements#custom_element_lifecycle_callbacks) that are fired at different times during the lifecycle of an element:
 
 **`connectedCallback`** \
 The element has been added to a document.

@@ -34,7 +34,7 @@ Because it's an open protocol, ActivityPub is used by a bunch of services with a
 | [Pixelfed](https://pixelfed.org/) | A photo sharing platform |
 | [PeerTube](https://joinpeertube.org/) | A video sharing platform |
 | [Micro.blog](https://micro.blog/) | A blogging service |
-| [Lemmy](https://lemmy.ml/) and [Kbin](https://kbin.social/) | Reddit usurpers |
+| [Lemmy](https://lemmy.ml/) | Reddit usurpers |
 
 ## Vocab
 ActivityPub describes **Actors** sending and receiving **Activities**. Actors have inboxes and outboxes where these Activities will appear as a **Stream**.
