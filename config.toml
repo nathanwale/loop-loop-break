@@ -17,5 +17,9 @@ taxonomies = [
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 smart_punctuation = true
 
+[markdown.highlighting]
+style = "inline"
+theme = "github-dark-high-contrast"
+
 [extra]
 # Put all your custom variables here
