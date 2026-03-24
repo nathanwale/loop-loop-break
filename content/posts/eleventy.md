@@ -10,7 +10,7 @@ tags = [
 summary = "My experience using the static site generator <a href='https://www.11ty.dev/'>Eleventy</a> to make this blog."
 +++
 
-{{ notice(message="<strong>Update</strong>: I've since converted this site to use <a href='https://www.getzola.org/'>Zola</a>. I got tired of getting Javascript vulnerability notices from GitHub.") }}
+{{ notice(message="<strong>Update</strong>: I've since converted this site to use <a href='https://www.getzola.org/'>Zola</a>. I got tired of getting Javascript vulnerability notices from GitHub about Eleventy.") }}
 
 When first building this site, I looked at a bunch of options before deciding on [Eleventy](https://www.11ty.dev/).
 
