@@ -10,9 +10,11 @@ tags = [
 summary = "More thoughts on using the static site generator <a href='https://www.11ty.dev/'>Eleventy</a> to make this blog."
 +++
 
+{{ notice(message="<strong>Update</strong>: I've since converted this site to use <a href='https://www.getzola.org/'>Zola</a>. I got tired of getting Javascript vulnerability notices from GitHub about Eleventy.") }}
+
 [Previously](/posts/eleventy/), on Loop Loop break...
 
-This site is built in [Eleventy](https://www.11ty.dev/). In the last post I wrote about my rationale for choosing it, and some thoughts on static site generators. Now I've had a bit more time with it, and wanted to flesh out my thoughts a little.
+This site ~~is~~ was built in [Eleventy](https://www.11ty.dev/). In the last post I wrote about my rationale for choosing it, and some thoughts on static site generators. Now I've had a bit more time with it, and wanted to flesh out my thoughts a little.
 
 ## Deployment
 
@@ -42,7 +44,7 @@ Tags are implemented by ~~abusing~~ taking advantage of Eleventy's [pagination s
 
 ### An example of paging
 From [the docs](https://www.11ty.dev/docs/pagination/#aliasing-to-a-different-variable):
-{%raw%}```yaml
+```yaml
 +++
 pagination:  
     data: testdata  
@@ -53,7 +55,7 @@ testdata:
     - Item2
 permalink: "different/{{ wonder | slug }}/index.html"
 +++
-```{%endraw%}
+```
 
 `testdata` above is a list of things we're going to paginate through. This is specified in `pagination.data`. `size` is how many items in each "chunk" — which is the items per page, I think.
 
@@ -71,7 +73,7 @@ The `collections` object collects all content of your static site and organises 
 If you assign `pagination.data` as `collections`, then you'll be "paging" through all your content, and each "page" will be a tag. `size: 1` because there is only one tag per page. `alias: tag` makes referencing the tag more convenient.
 
 Here's an example that's used on this site:
-{%raw%}```liquid
+```liquid
 +++
 layout: "layouts/main.html"
 pagination:
@@ -82,7 +84,7 @@ permalink: /tags/{{ tag }}/
 +++
 <h1>Posts tagged “{{ tag }}”</h1>
 {% render "post-list.html", posts: collections[ tag ] %}
-```{%endraw%}
+```
 
 `tag` is the pagination key. It's then displayed in the header. The content in `collections[tag]` is then passed to the template `post-list.html`, which renders a link to each.
 
@@ -110,7 +112,7 @@ Most of my grievances with static site-generators come from their opaque nature.
 
 Given that, I have a sketch of a tiny language that I think could handle generating **Loop Loop Break** as it is. It's in a kind of pseudo-Python/SmallTalk, just to play around with the idea:
 
-{%raw%}```
+```
 # set your output directory
 output = "_site/"
 
@@ -139,7 +141,7 @@ for tag in data.tags:
 # copy through static files
 watch 'style/*', 'images/*' as file:
     copy file
-```{%endraw%}
+```
 
 Why make a new language? I think it gives more flexibility than a straight config file. Things like tags or pagination are pretty hard to generalise in a declarative way. 
 
