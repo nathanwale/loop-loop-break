@@ -1,8 +1,6 @@
 ---
-layout: "layouts/about.html"
+title: About Loop Loop Break
 ---
-# About Loop Loop Break
-
 It is I, Nathan, one of those web peeps. On this here blog type contraption I write about programming, web design and computery stuff.
 (Okay there are only {{ collections.post | size }} posts so far, but let's dream big).
 
