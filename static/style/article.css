@@ -29,7 +29,7 @@ hr {
 
 pre, 
 code {
-    background-color: var(--dark);
+    background-color: var(--dark-code);
     color: white;
     padding: 0.1em 0.5em;
 }
@@ -48,7 +48,7 @@ h2 code {
 }
 
 pre {
-    overflow: scroll;
+    overflow: auto;
     border-radius: 5px;
     margin: 1em 0 !important; 
     margin-left: -0.5em !important;
