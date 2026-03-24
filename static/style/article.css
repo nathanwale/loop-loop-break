@@ -103,3 +103,10 @@ article table td {
 article table th {
     background-color: lightgray;
 }
+
+p.notice {
+    background-color: var(--light);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    font-style: italic;
+}
